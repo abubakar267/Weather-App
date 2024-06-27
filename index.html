@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-view">
+            <div class="inside-content">
+                <input type="text" placeholder="Enter City" name="search" id="search">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div class="main-classifier">
+                <img src="#" alt="weather icon" id="main-img">
+                <h1 class="main-temp"></h1>
+                <h4 class="date"></h4>
+                <h4 class="city-name"></h4> <!-- New element for city name -->
+            </div>
+
+            <div class="additional-info">
+                <p>Wind Speed: <span class="wind-speed"></span> m/s</p>
+                <p>Cloudiness: <span class="cloudiness"></span>%</p>
+                <p>Visibility: <span class="visibility"></span> m</p>
+            </div>
+        </div>
+
+        <div class="secondary-view">
+            <div class="sub-secondary">
+                <div class="box feels_like">
+                    <p class="sec-box-heading">Feels Like</p>
+                    <p class="feels_text sec-box-heading"></p>
+                </div>
+                <div class="box humidity">
+                    <p class="sec-box-heading">Humidity</p>
+                    <p class="humidity_text sec-box-heading"></p>
+                </div>
+                <div class="box pressure">
+                    <p class="sec-box-heading">Pressure</p>
+                    <p class="pressure_text sec-box-heading"></p>
+                </div>
+                <div class="box temp-max">
+                    <p class="sec-box-heading">Maximum Temperature</p>
+                    <p class="temp_max_text sec-box-heading"></p>
+                </div>
+                <div class="box temp-min">
+                    <p class="sec-box-heading">Minimum Temperature</p>
+                    <p class="temp_min_text sec-box-heading"></p>
+                </div>
+            </div>
+
+            <div class="sub2-secondary">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="codes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

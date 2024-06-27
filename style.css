@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    height: 90vh;
+    width: 90vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-view {
+    background-color: #EADBC8;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.inside-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#search-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #5a9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #48a;
+}
+
+.main-classifier {
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px 0px gray;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    background-color: #C7B7A3;
+    margin-top: 20px;
+}
+
+#main-img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.main-temp {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.additional-info {
+    margin-top: 20px;
+    width: 80%;
+    text-align: left;
+    color: #333;
+    font-size: 1rem;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.additional-info p {
+    margin-bottom: 10px;
+}
+
+.additional-info span {
+    font-weight: bold;
+    color: #333;
+}
+
+.secondary-view {
+    background-color: #C7B7A3;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sub-secondary {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    padding: 20px;
+    background-color: #EADBC8;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px gray;
+    text-align: center;
+}
+
+.sec-box-heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sub2-secondary {
+    width: 100%;
+    height: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
