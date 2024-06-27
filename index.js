@@ -5,17 +5,21 @@ let city, feels_like, humidity, pressure, temp, temp_max, temp_min, wind_speed, 
 let tempUnit = "°C", humidityUnit = "%", pressureUnit = "hPa"; // Default units
 
 async function setAttributes() {
-   
+    // Display current day and date
+    let currentDate = new Date();
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let formattedDate = currentDate.toLocaleDateString('en-US', options);
+
     document.querySelector(".main-temp").innerText = Math.round(temp) + " " + tempUnit;
     document.querySelector(".feels_text").innerText = Math.round(feels_like) + " " + tempUnit;
     document.querySelector(".humidity_text").innerText = Math.round(humidity) + " " + humidityUnit;
     document.querySelector(".pressure_text").innerText = Math.round(pressure) + " " + pressureUnit;
     document.querySelector(".temp_max_text").innerText = Math.round(temp_max) + " " + tempUnit;
     document.querySelector(".temp_min_text").innerText = Math.round(temp_min) + " " + tempUnit;
-    document.querySelector(".wind-speed").innerText = Math.round(wind_speed);
-    document.querySelector(".cloudiness").innerText = Math.round(cloudiness);
-    document.querySelector(".visibility").innerText = Math.round(visibility);
-    document.querySelector(".city-name").innerText = city;
+    document.querySelector(".wind-speed").innerText = Math.round(wind_speed) + " m/s";
+    document.querySelector(".cloudiness").innerText = Math.round(cloudiness) + "%";
+    document.querySelector(".visibility").innerText = Math.round(visibility) + " m";
+    document.querySelector(".city-name").innerText = `${city}, ${formattedDate}`;
 }
 
 function getname() {
